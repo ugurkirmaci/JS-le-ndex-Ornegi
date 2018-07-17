@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<link rel="stylesheet" type="text/css" href="sample.css">
+
+
+</head>
+<body>
+	<h1>Model</h1>
+	<div class="karartma"></div>
+	<div class="model"></div>
+	<h2>Model</h2>
+	<p>Lorem Ipsum, dizgi ve baskı endüstrisinde kullanılan mıgır metinlerdir. Lorem Ipsum, adı bilinmeyen bir matbaacının bir hurufat numune kitabı oluşturmak üzere bir yazı galerisini alarak karıştırdığı 1500'lerden beri endüstri standardı sahte metinler olarak kullanılmıştır. Beşyüz yıl boyunca varlığını sürdürmekle kalmamış, aynı zamanda pek değişmeden elektronik dizgiye de sıçramıştır. 1960'larda Lorem Ipsum pasajları da içeren Letraset yapraklarının yayınlanması ile ve yakın zamanda Aldus PageMaker gibi Lorem Ipsum sürümleri içeren masaüstü yayıncılık yazılımları ile popüler olmuştur.</p>
+	<button class="close">Close</button>
+</div>
+	<button class="open">Open</button>
+<script type="text/javascript">
+	$(".open").on("click",function () {
+		$(".karartma, .model").addClass("active");
+	});
+	$(".close, .model").on("click",function () {
+		$(".karartma, .model").removeClass("active");
+	});
+	$(document).keyup(function (e) {
+		if (e.keyCode === 27) {
+			$(".karartma, .model").removeClass("active");
+		}
+	});
+</script>
+
+
+
+
+</body>
+</html>
